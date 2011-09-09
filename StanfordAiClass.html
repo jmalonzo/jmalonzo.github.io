@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>StanfordAiClass</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2011-09-09 13:52:42 EST"/>
+<meta name="author" content="Jan Alonzo"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">StanfordAiClass</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Stanford CS221: Introduction to Artificial Intelligence </a>
+<ul>
+<li><a href="#sec-1-1">1.1 Class: Overview of AI, Search </a></li>
+<li><a href="#sec-1-2">1.2 Assignment 1 </a></li>
+<li><a href="#sec-1-3">1.3 Class: Statistics, Uncertainty, and Bayes networks </a></li>
+<li><a href="#sec-1-4">1.4 Assignment 2 </a></li>
+<li><a href="#sec-1-5">1.5 Class: Machine Learning </a></li>
+<li><a href="#sec-1-6">1.6 Assignment 3 </a></li>
+<li><a href="#sec-1-7">1.7 Class: Hidden Markov models and Bayes filters </a></li>
+<li><a href="#sec-1-8">1.8 Assignment 4 </a></li>
+<li><a href="#sec-1-9">1.9 Class: Markov Decision Processes and Reinforcement Learning </a></li>
+<li><a href="#sec-1-10">1.10 Assignment 5 </a></li>
+<li><a href="#sec-1-11">1.11 Class: Adversarial planning (games) and belief space planning (POMDPs) </a></li>
+<li><a href="#sec-1-12">1.12 Midterm Exam </a></li>
+<li><a href="#sec-1-13">1.13 Class: Logic and Logical Problem Solving </a></li>
+<li><a href="#sec-1-14">1.14 Assignment 6 </a></li>
+<li><a href="#sec-1-15">1.15 Class: Image Processing and Computer Vision </a></li>
+<li><a href="#sec-1-16">1.16 Assignment 7 </a></li>
+<li><a href="#sec-1-17">1.17 Class: Robotics and robot motion planning </a></li>
+<li><a href="#sec-1-18">1.18 Assignment 8 </a></li>
+<li><a href="#sec-1-19">1.19 Class: Natural Language Processing and Information Retrieval </a></li>
+<li><a href="#sec-1-20">1.20 Final Exam </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Stanford CS221: Introduction to Artificial Intelligence </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Class: Overview of AI, Search </h3>
+<div class="outline-text-3" id="text-1-1">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-10-10 Mon</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Assignment 1 </h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE: </span> <span class="timestamp">2011-10-16 Sun</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Class: Statistics, Uncertainty, and Bayes networks </h3>
+<div class="outline-text-3" id="text-1-3">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-10-17 Mon</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Assignment 2 </h3>
+<div class="outline-text-3" id="text-1-4">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE: </span> <span class="timestamp">2011-10-23 Sun</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Class: Machine Learning </h3>
+<div class="outline-text-3" id="text-1-5">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-10-24 Mon</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> Assignment 3 </h3>
+<div class="outline-text-3" id="text-1-6">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE: </span> <span class="timestamp">2011-10-30 Sun</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> Class: Hidden Markov models and Bayes filters </h3>
+<div class="outline-text-3" id="text-1-7">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-10-31 Mon</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-8" class="outline-3">
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> Assignment 4 </h3>
+<div class="outline-text-3" id="text-1-8">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE: </span> <span class="timestamp">2011-11-07 Mon</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-9" class="outline-3">
+<h3 id="sec-1-9"><span class="section-number-3">1.9</span> Class: Markov Decision Processes and Reinforcement Learning </h3>
+<div class="outline-text-3" id="text-1-9">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-07 Mon</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-10" class="outline-3">
+<h3 id="sec-1-10"><span class="section-number-3">1.10</span> Assignment 5 </h3>
+<div class="outline-text-3" id="text-1-10">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE: </span> <span class="timestamp">2011-11-13 Sun</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-11" class="outline-3">
+<h3 id="sec-1-11"><span class="section-number-3">1.11</span> Class: Adversarial planning (games) and belief space planning (POMDPs) </h3>
+<div class="outline-text-3" id="text-1-11">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-14 Mon</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-12" class="outline-3">
+<h3 id="sec-1-12"><span class="section-number-3">1.12</span> Midterm Exam </h3>
+<div class="outline-text-3" id="text-1-12">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE: </span> <span class="timestamp">2011-11-20 Sun</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-13" class="outline-3">
+<h3 id="sec-1-13"><span class="section-number-3">1.13</span> Class: Logic and Logical Problem Solving </h3>
+<div class="outline-text-3" id="text-1-13">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-21 Mon</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-14" class="outline-3">
+<h3 id="sec-1-14"><span class="section-number-3">1.14</span> Assignment 6 </h3>
+<div class="outline-text-3" id="text-1-14">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE: </span> <span class="timestamp">2011-11-27 Sun</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-15" class="outline-3">
+<h3 id="sec-1-15"><span class="section-number-3">1.15</span> Class: Image Processing and Computer Vision </h3>
+<div class="outline-text-3" id="text-1-15">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-28 Mon</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-16" class="outline-3">
+<h3 id="sec-1-16"><span class="section-number-3">1.16</span> Assignment 7 </h3>
+<div class="outline-text-3" id="text-1-16">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE: </span> <span class="timestamp">2011-12-04 Sun</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-17" class="outline-3">
+<h3 id="sec-1-17"><span class="section-number-3">1.17</span> Class: Robotics and robot motion planning </h3>
+<div class="outline-text-3" id="text-1-17">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-12-05 Mon</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-18" class="outline-3">
+<h3 id="sec-1-18"><span class="section-number-3">1.18</span> Assignment 8 </h3>
+<div class="outline-text-3" id="text-1-18">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE: </span> <span class="timestamp">2011-12-11 Sun</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-19" class="outline-3">
+<h3 id="sec-1-19"><span class="section-number-3">1.19</span> Class: Natural Language Processing and Information Retrieval </h3>
+<div class="outline-text-3" id="text-1-19">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-12-12 Mon</span></span><br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-20" class="outline-3">
+<h3 id="sec-1-20"><span class="section-number-3">1.20</span> Final Exam </h3>
+<div class="outline-text-3" id="text-1-20">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE: </span> <span class="timestamp">2011-12-18 Sun</span></span><br/>
+</p></div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2011-09-09 13:52:42 EST</p>
+<p class="author">Author: Jan Alonzo</p>
+<p class="creator">Org version 7.7 with Emacs version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
