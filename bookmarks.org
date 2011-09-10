@@ -1,0 +1,17 @@
+* Bookmarks
+
+*IN PROGRESS*
+
+** Quora
+
+Some interesting posts and questions from [[http://www.quora.com][Quora]]. Some of these are for
+future endeavors and may not be /that interesting/ to the reader.
+
+- [[http://www.quora.com/Can-Quora-explain-how-it-uses-EC2-instances-for-each-engineer-in-more-detail?q=quora+ec2][Can Quora explain how it uses EC2 instances for each engineer in more detail?]]
+- [[http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist][How do I become a data scientist]]
+- [[http://www.quora.com/MapReduce/Whats-the-best-way-to-come-up-to-speed-on-MapReduce-Hadoop-and-Hive][What's the best way to come up to speed on MapReduce, Hadoop, and Hive?]]
+
+** org-mode
+
+- [[http://doc.norang.ca/org-mode.html][Organize your life in plain txt]]
+- [[http://orgmode.org/manual/index.html#Top][Org Manual]]
