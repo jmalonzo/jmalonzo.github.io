@@ -9,9 +9,36 @@ future endeavors and may not be /that interesting/ to the reader.
 
 - [[http://www.quora.com/Can-Quora-explain-how-it-uses-EC2-instances-for-each-engineer-in-more-detail?q=quora+ec2][Can Quora explain how it uses EC2 instances for each engineer in more detail?]]
 - [[http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist][How do I become a data scientist]]
+
+*** Computer Science
+
 - [[http://www.quora.com/MapReduce/Whats-the-best-way-to-come-up-to-speed-on-MapReduce-Hadoop-and-Hive][What's the best way to come up to speed on MapReduce, Hadoop, and Hive?]]
+- [[http://www.quora.com/What-are-the-seminal-papers-in-distributed-systems-Why][What are the seminal papers in distributed systems and Why]]
+
+*** Behavioral
+
+- [[http://www.quora.com/How-can-I-improve-my-focus][How can I improve my focus]]
+
+*** Startups
+
+- [[http://www.quora.com/What-should-I-do-if-I-have-2-3-startups-ideas-worth-launching][What should I do if I have 2-3 startups ideas worth launching?]]
+- [[http://www.quora.com/Bootstrapping-companies][Bootstrapping Companies]]
+
+*** Australian Startups
+
+- [[http://www.quora.com/Australian-Startups][Australian Startups topic at Quora]]
+- [[http://www.quora.com/Are-there-Xooglers-doing-startups-in-Australia][Are there Xooglers doing startups in Australia]]
 
 ** org-mode
 
 - [[http://doc.norang.ca/org-mode.html][Organize your life in plain txt]]
 - [[http://orgmode.org/manual/index.html#Top][Org Manual]]
+
+** Venture Capital
+
+- [[http://randfishkin.com/blog/128/misadventures-venture-capital-funding][Misadventures in Venture Capital funding]]
+
+
+** Visualization
+
+- [[https://wiki.cs.umd.edu/cmsc734_09/index.php?title=Syllabus][Univ of Md: CMSC 734 Information Visualization – Syllabus]]
